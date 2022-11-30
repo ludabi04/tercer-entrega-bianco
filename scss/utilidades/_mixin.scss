@@ -1,0 +1,14 @@
+@mixin f-row {
+    display: flex;
+    flex-direction: row;  
+}
+
+@mixin f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin sombra-boton {
+    text-shadow: 1px 1px 1px rgb(179, 179, 237);
+}
+

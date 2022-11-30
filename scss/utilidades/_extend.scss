@@ -1,0 +1,14 @@
+
+%dflexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagenes-premios {
+    @extend %dflexcol;
+}
+
+.detalle-premios {
+    @extend %dflexcol;
+}

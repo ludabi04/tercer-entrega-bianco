@@ -1,0 +1,664 @@
+.imagenes-premios, .detalle-premios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Comfortaa; }
+
+body {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%); }
+
+.animacion-ingreso {
+  font: 100 .5rem "Neuton";
+  color: black;
+  text-align: center;
+  margin: 0; }
+
+.animacion-ingreso p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  width: 100%; }
+
+.animacion-ingreso p span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(../img/cielo.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden; }
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%);
+  align-items: center;
+  gap: 2.7rem;
+  justify-content: flex-end; }
+
+.titulo-nav, .nav-item {
+  text-align: center;
+  text-shadow: 1px 1px 1px #b3b3ed; }
+
+.navbar-nav {
+  position: absolute;
+  right: .5rem; }
+
+.nav-item {
+  background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%);
+  border-radius: 1rem;
+  margin: .2rem 0 0;
+  border: 1px solid #8585ab;
+  text-align: center;
+  box-shadow: 1px 1px 3px #8585ab; }
+
+.logo_empresa {
+  display: none; }
+
+.contendedor-index {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center; }
+
+.carousel {
+  display: none; }
+
+.intro {
+  text-align: center;
+  padding-right: 1rem; }
+
+.img-local {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: center; }
+
+.horarios {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.como-llegar {
+  display: none; }
+
+.img-horarios {
+  width: 40%;
+  padding-top: 1rem; }
+
+.link-directo-mapa {
+  padding-bottom: 2rem;
+  text-decoration: none;
+  color: wheat; }
+
+.link-directo-mapa:hover {
+  color: #e0ab48;
+  text-shadow: 1px 1px 1px white; }
+
+.detalle-horarios {
+  justify-content: center;
+  padding-top: 1rem;
+  text-align: center; }
+
+/*<<<<<<<<<<<<<<<<<<<<<<QUIENES SOMOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.video {
+  display: none; }
+
+.premio {
+  display: none; }
+
+.novedades p span {
+  text-decoration: underline; }
+
+.titulo-quienes-somos {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: underline; }
+
+.descripcion {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.tipo-cortes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem; }
+
+.imagen-cortes {
+  width: 50%; }
+
+.flecha-arriba {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.ir-arriba {
+  border: 1px solid #92d1e6;
+  margin: 0;
+  box-shadow: 1px 1px grey;
+  background-color: lightblue;
+  width: 5%; }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< PRODUCTOS PARA CELU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.productos {
+  flex-direction: row;
+  text-align: center; }
+
+.imagen-producto {
+  width: 200px;
+  height: 200px; }
+
+.sugerencia-trabajos {
+  text-align: center; }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.menu-item {
+  font-size: x-large; }
+
+.contactoInicio .mensaje-final p {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.contactoInicio .donde-estamos-total {
+  align-items: stretch;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  .contactoInicio .donde-estamos-total div .mapa {
+    display: none; }
+
+.contactoInicio .mensaje-final .gif {
+  display: block;
+  text-align: center; }
+  .contactoInicio .mensaje-final .gif img {
+    width: 50%; }
+
+.donde-estamos-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+div iframe {
+  align-items: center;
+  height: 50%;
+  width: 100%; }
+
+.como-llegar-conten {
+  display: none; }
+
+.conten-mje-email {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem; }
+  .conten-mje-email a {
+    text-decoration: none;
+    color: whitesmoke; }
+
+.email {
+  width: 80%; }
+
+.como-llegar1 {
+  display: none;
+  padding: 1rem;
+  text-align: center; }
+
+.como-llegar1 span {
+  display: none; }
+
+fieldset {
+  display: none; }
+  fieldset legend {
+    text-align: center;
+    padding-bottom: 1rem; }
+    fieldset legend .formulario .tituloForm {
+      display: none; }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.lista-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 1rem; }
+
+.logos {
+  list-style: none; }
+
+.logo-redes {
+  width: 30px; }
+
+.copyright {
+  text-align: center; }
+
+/*MEDIA QUERI PARA tablet*/
+@media screen and (min-width: 720px) {
+  .animacion-ingreso p span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(../img/cielo.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden; }
+  /* Animate Background Image */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%; }
+    100% {
+      background-position: 100% 50%; } }
+  /* Animate Background Image */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%; }
+    100% {
+      background-position: 100% 50%; } }
+  .logo_empresa {
+    display: block;
+    width: 100%;
+    max-height: 56px; }
+  .header {
+    justify-content: space-between; }
+  .todos-testimonios {
+    display: block; }
+  .titulo-nav, .nav-item {
+    text-shadow: 1px 1px 1px #b3b3ed; }
+  .nav-item {
+    border-radius: none;
+    border: none;
+    margin: 1rem .25rem 1rem .25rem;
+    text-align: center;
+    align-content: center;
+    box-shadow: none; }
+  .nav-link {
+    font-size: 1rem; }
+  .nav-item {
+    background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%);
+    border-radius: 1rem;
+    margin: .2rem 0 0;
+    border: 1px solid #8585ab;
+    text-align: center;
+    box-shadow: 1px 1px 3px #8585ab; }
+  .carousel-indicators {
+    z-index: 1;
+    display: none; }
+  .contenedor-index {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center; }
+  .carousel {
+    display: block;
+    height: 700px !important;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: center !important; }
+  .carousel-caption {
+    opacity: 0.5;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    position: sticky; }
+  .carousel-inner {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important; }
+  .carousel-item {
+    height: 100% !important;
+    float: none !important;
+    width: 70% !important;
+    margin-right: 0px !important; }
+  .intro {
+    align-items: center;
+    max-width: 50%; }
+  .intro p {
+    font-size: 1.5rem; }
+  .detalle-horarios {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px #151574; }
+  .img-horarios {
+    width: 30%;
+    padding-top: 1rem; }
+  .horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .como-llegar {
+    display: block;
+    width: 100%;
+    filter: drop-shadow(1px 1px 1px black); }
+  .como-llegar p {
+    padding: 1rem;
+    text-shadow: 1px 1px 1px #1816b8;
+    font-size: 2rem; }
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas: "presentation presentation presentation" "video article article" "premio premio premio";
+    gap: 2rem; }
+  .presentation {
+    grid-area: presentation;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+  .titulo-quienes-somos {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px 1px black; }
+  .video {
+    grid-area: video;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem; }
+  .video-tablet {
+    display: none; }
+  .video div video {
+    width: 80%; }
+  .article {
+    grid-area: article;
+    padding-right: 1rem; }
+  .titulo-novedad {
+    text-align: center;
+    align-items: center;
+    animation-name: novedades;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s; }
+  @keyframes novedades {
+    from {
+      transform: scale(0.5); }
+    to {
+      transform: scale(1); } }
+  .premio {
+    display: flex;
+    flex-direction: row; }
+  .img-premio {
+    width: 40%; }
+  @keyframes premio {
+    from {
+      transform: rotate(0); }
+    to {
+      transform: rotate(360deg); } }
+  .detalle {
+    max-width: 80%;
+    text-align: center;
+    border: 1px solid skyblue; }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA tablet<<<<<<<<<<<<<<<<<<<<<<*/
+  .tipo-cortes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .container-fluid {
+    display: flex;
+    flex-direction: column; }
+  .imagen-cortes {
+    width: 100%;
+    height: 100%; }
+  .ir-arriba {
+    display: none; }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<<<PAGINA DE PRODUCTOS tablet<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  .encabezado {
+    padding: 20px; }
+  .productos {
+    flex-direction: row; }
+  .imagen-producto {
+    width: 200px;
+    height: 200px; }
+  .comprar-productos {
+    display: none; }
+  .sugerenciaTrabajos h3 {
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 5px 5px 5px #c7c4c4;
+    font-size: 30px;
+    padding-bottom: 50px; }
+  /*PAGINA DE TRABAJOS*/
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .imagenCortes {
+    width: 200px;
+    height: 200px; }
+  .genero {
+    text-decoration-line: underline;
+    padding-left: 20px;
+    padding-top: 30px; }
+  div p {
+    padding: 1rem; }
+  .tipos {
+    padding-top: 30px;
+    font-size: 15px; }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO tablet <<<<<<<<<<<<<<<<<<<<<*/
+  .menu-item {
+    display: none; }
+  .mensaje-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mensaje-final p {
+    max-width: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .donde-estamos p {
+    padding-top: 50px;
+    padding-bottom: 30px; }
+  .contactoInicio .mensaje-final .gif {
+    display: block;
+    padding-bottom: 2rem;
+    width: 80%;
+    text-align: center; }
+  .contactoInicio .donde-estamos-total {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: .5rem;
+    padding-right: .5rem; }
+    .contactoInicio .donde-estamos-total .mapa {
+      display: none; } }
+
+.contactoInicio .donde-estamos-total {
+  align-items: stretch;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  .contactoInicio .donde-estamos-total .mapa {
+    display: none; }
+
+.contactoInicio .donde-estamos-total .link-llegar {
+  animation-name: click;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  padding-bottom: 3rem; }
+  .contactoInicio .donde-estamos-total .link-llegar .click-llegar {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem; }
+
+@keyframes click {
+  from {
+    transform: scale(0.5); }
+  to {
+    transform: scale(1); } }
+
+div iframe {
+  box-shadow: 1px 1px 20px #e3dede;
+  width: 500px;
+  height: 300px; }
+
+.por-whatsapp {
+  display: none; }
+
+.como-llegar1 span {
+  display: inline; }
+
+/*FORMULARIO*/
+.formulario {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+
+.tituloForm,
+.camposForm {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: center; }
+
+legend {
+  text-align: center; }
+
+.form {
+  width: 190px; }
+
+.boton {
+  background-color: grey;
+  width: 100px;
+  height: 30px; }
+
+.boton:hover {
+  box-shadow: 1px 1px 5px #e3dede; }
+
+.botones {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px; }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER COMPU QUERIE<<<<<<<<<<<<<<<<<*/
+.lista-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-right: 1rem; }
+
+.logos {
+  list-style: none;
+  position: sticky;
+  right: 0;
+  padding-left: 20px; }
+
+.logo-redes {
+  width: 40px;
+  filter: drop-shadow(1px 1px 1px black); }
+
+.copyright {
+  text-align: center; }
+
+/*MEDIA QUERIE PARA COMPU*/
+@media screen and (min-width: 992px) {
+  /* PAGINA PRINCIPAL*/
+  .carousel-indicators {
+    display: block;
+    text-align: center; }
+  /*PAGINA QUIENES SOMOS*/
+  .total-pagina-quienes header div h1 {
+    color: blue;
+    text-align: start;
+    padding-right: 3rem; }
+  .premio {
+    display: flex;
+    flex-direction: column; }
+    .premio .detalle-premios {
+      display: flex;
+      flex-direction: row; }
+      .premio .detalle-premios .detalle {
+        border: none; }
+  .premio .imagenes-premios {
+    display: flex;
+    flex-direction: row; }
+    .premio .imagenes-premios .img-premio {
+      display: inline;
+      filter: drop-shadow(1px 1px 1px black);
+      animation-name: premio;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 3s;
+      width: 7%; }
+  .video-tablet {
+    display: block;
+    padding: 1rem; }
+  .video div video {
+    width: 100%; }
+  /*PAGINA DE PRODUCTOS*/
+  div .comprar-productos {
+    display: block;
+    text-align: center; }
+  div a {
+    text-decoration: none; }
+    div a span {
+      color: black; }
+  /*PAGINA DE TRABAJOS*/
+  div .tipo-cortes {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    div .tipo-cortes .col .imagen-cortes {
+      width: 40%; }
+  /*PAGINA DE CONTACTO*/
+  .contactoInicio .donde-estamos-total {
+    align-items: stretch;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    align-items: center; }
+    .contactoInicio .donde-estamos-total div .mapa {
+      display: block; }
+  .como-llegar-conten {
+    display: block; }
+  .email {
+    display: none; }
+  .contactoInicio .donde-estamos-total .link-llegar {
+    display: none; }
+  fieldset {
+    display: block; } }
